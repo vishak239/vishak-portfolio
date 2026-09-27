@@ -14,11 +14,11 @@ export default function OtherProjects() {
           07 — SELECTED ARCHIVE
         </span>
         <span className="text-cinematic-muted text-[11px] tracking-widest">
-          INDEX 03
+          INDEX {String(archiveProjects.length).padStart(2, '0')}
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {archiveProjects.map((project, idx) => {
           const IconComponent = icons[idx] || Film;
           return (

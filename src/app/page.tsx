@@ -26,7 +26,7 @@ export default function Home() {
         {/* ACT II: ORIGIN (ABOUT & ARCHITECTURE CONSTELLATION) */}
         <About />
 
-        {/* FLAGSHIP BENCHMARK: PREPPITCH AI */}
+        {/* FEATURED PROJECT: PREPPITCH */}
         <PrepPitchProject />
 
         {/* VISION SYSTEM: DRIVER DROWSINESS DETECTION */}
@@ -35,7 +35,7 @@ export default function Home() {
         {/* PREDICTIVE ANALYTICS: HOUSE PRICE PREDICTION */}
         <HousePriceProject />
 
-        {/* SELECTED ARCHIVE: MOVIE BOOKING, FOOD COMMERCE, RICS CAMERA */}
+        {/* SELECTED ARCHIVE: MOVIE BOOKING, FOOD ORDERING */}
         <OtherProjects />
 
         {/* INTELLECTUAL EVOLUTION: THE AI TRAJECTORY */}

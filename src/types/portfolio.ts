@@ -15,6 +15,7 @@ export interface Project {
   technologies: string[];
   flowSteps?: ProjectFlowStep[];
   responsibilities?: string[];
+  inDevelopment?: string[];
   metrics?: { label: string; value: string }[];
   isFlagship?: boolean;
   githubUrl?: string;
@@ -41,7 +42,8 @@ export interface ExperienceItem {
   badge?: string;
   highlight?: string;
   period?: string;
-  description: string;
+  location?: string;
+  description?: string;
   responsibilities?: string[];
 }
 
@@ -49,9 +51,14 @@ export interface EducationInfo {
   degree: string;
   major: string;
   institution: string;
+  currentStatus?: string;
   cgpa: string;
   graduationYear: string;
   location: string;
+  school?: {
+    name: string;
+    board: string;
+  };
 }
 
 export interface ProfileInfo {

@@ -34,17 +34,16 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Vishak — AI Engineer | Python Developer | AI / ML',
   description:
-    'Personal cinematic portfolio of Vishak, an AI Engineer, Python Developer, and AI/ML practitioner building intelligent systems, computer vision models, and predictive applications.',
+    'Portfolio of Vishak, an AI & Data Science student and Python developer building machine learning projects and intelligent applications.',
   keywords: [
     'Vishak',
     'AI Engineer',
     'Python Developer',
     'Machine Learning',
-    'Deep Learning',
+    'Data Science',
+    'Backend Development',
     'Computer Vision',
     'PrepPitch',
-    'OpenCV',
-    'Django',
     'Portfolio'
   ],
   authors: [{ name: 'Vishak' }],
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     title: 'Vishak — AI Engineer | Python Developer | AI / ML',
     description:
-      'Personal cinematic portfolio of Vishak, an AI Engineer, Python Developer, and AI/ML practitioner building intelligent systems, computer vision models, and predictive applications.',
+      'Portfolio of Vishak, an AI & Data Science student and Python developer building machine learning projects and intelligent applications.',
     siteName: 'Vishak Portfolio',
     images: [
       {

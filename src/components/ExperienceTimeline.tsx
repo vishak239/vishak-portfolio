@@ -16,10 +16,10 @@ export default function ExperienceTimeline() {
 
       <div className="flex flex-col gap-2 mb-12">
         <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-cinematic-text tracking-tight">
-          Engineering Residencies
+          Internships &amp; Roles
         </h3>
         <p className="text-sm font-sans text-cinematic-muted font-light">
-          Practical industry internships in Python development, machine learning, and deep learning.
+          Internships and student roles in Python development, machine learning and deep learning.
         </p>
       </div>
 
@@ -38,6 +38,11 @@ export default function ExperienceTimeline() {
                   <span className="text-xs font-mono text-gold-bright">
                     {exp.role}
                   </span>
+                  {(exp.period || exp.location) && (
+                    <span className="block text-[11px] font-mono text-cinematic-muted mt-0.5">
+                      {[exp.period, exp.location].filter(Boolean).join(' · ')}
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -63,9 +68,11 @@ export default function ExperienceTimeline() {
               </div>
             )}
 
-            <p className="text-xs sm:text-sm font-sans text-cinematic-muted leading-relaxed font-light max-w-3xl">
-              {exp.description}
-            </p>
+            {exp.description && (
+              <p className="text-xs sm:text-sm font-sans text-cinematic-muted leading-relaxed font-light max-w-3xl">
+                {exp.description}
+              </p>
+            )}
 
             {exp.responsibilities && (
               <ul className="flex flex-col gap-2 pt-1 max-w-3xl">

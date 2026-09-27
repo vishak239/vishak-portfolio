@@ -43,7 +43,7 @@ export default function FinalScene() {
             THE HORIZON BECKONS // 2025–2027
           </span>
           <span className="hidden sm:inline text-cinematic-muted text-[10px] tracking-widest">
-            35mm CINEMATOGRAPHY
+            VISUAL ARCHIVE
           </span>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function FinalScene() {
             <span className="text-gold-bright italic">starts here.</span>
           </h3>
           <p className="text-cinematic-muted text-sm sm:text-base leading-relaxed font-sans font-light max-w-xl">
-            Always open for engineering fellowships, research collaborations, and ambitious AI product teams. Reach out directly or connect across verified channels.
+            Always open for engineering fellowships, research collaborations, and ambitious AI product teams. Reach out directly by email.
           </p>
 
           <div className="pt-2 flex flex-wrap gap-4 items-center">
@@ -65,7 +65,7 @@ export default function FinalScene() {
               className="px-6 py-3.5 rounded-sm bg-gold-primary text-black font-mono text-xs font-bold tracking-widest uppercase hover:bg-gold-bright transition-all shadow-gold-subtle flex items-center gap-2"
             >
               <Send className="w-4 h-4" />
-              <span>Initialize Transmission</span>
+              <span>Send Email</span>
             </a>
 
             <button
@@ -75,19 +75,19 @@ export default function FinalScene() {
               {copied ? (
                 <>
                   <Check className="w-4 h-4 text-gold-bright" />
-                  <span className="text-gold-bright">Address Copied</span>
+                  <span className="text-gold-bright">Email Copied</span>
                 </>
               ) : (
                 <>
                   <Copy className="w-4 h-4 text-cinematic-muted" />
-                  <span>Copy Direct Mail</span>
+                  <span>Copy Email</span>
                 </>
               )}
             </button>
           </div>
         </div>
 
-        {/* Verified Channels Grid */}
+        {/* Contact Channels Grid */}
         <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
             href={`mailto:${profileData.contact.email}`}
@@ -98,7 +98,7 @@ export default function FinalScene() {
               <span className="text-[10px] font-mono text-cinematic-dim">DIRECT</span>
             </div>
             <span className="font-serif text-lg text-cinematic-text group-hover:text-gold-bright transition-colors">
-              Direct Mail
+              Email
             </span>
             <span className="font-mono text-[11px] text-cinematic-muted truncate">
               {profileData.contact.email}

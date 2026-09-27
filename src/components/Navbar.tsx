@@ -156,7 +156,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="w-full py-3 text-center rounded-sm bg-gold-primary text-black font-mono text-xs font-bold tracking-widest uppercase hover:bg-gold-bright transition-colors shadow-gold-subtle"
             >
-              Initialize Contact
+              Contact
             </a>
           </div>
         </div>

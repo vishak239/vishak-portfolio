@@ -150,7 +150,7 @@ export default function About() {
             </div>
 
             <div className="flex flex-wrap gap-2 pt-2 border-t border-surface-border">
-              {['Python', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'OpenCV', 'Django', 'Automation'].map((tag) => (
+              {['Python', 'Machine Learning', 'Computer Vision', 'Backend', 'Intelligent Applications', 'Automotive AI'].map((tag) => (
                 <span
                   key={tag}
                   className="px-2.5 py-1 rounded-sm bg-surface-highlight border border-surface-border text-gold-bright text-xs font-mono"

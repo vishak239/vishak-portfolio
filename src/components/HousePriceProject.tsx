@@ -50,9 +50,9 @@ export default function HousePriceProject() {
           <div className="flex items-center justify-between border-b border-surface-border pb-3 text-xs font-mono">
             <span className="text-gold-bright tracking-cinematic uppercase flex items-center gap-2">
               <BarChart3 className="w-4 h-4 text-gold-primary" />
-              Machine Learning Data Lifecycle
+              Notebook Workflow
             </span>
-            <span className="text-cinematic-muted">6-STAGE PIPELINE</span>
+            <span className="text-cinematic-muted">PHASE 1</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -88,9 +88,9 @@ export default function HousePriceProject() {
           <div className="p-3.5 rounded-sm bg-surface-elevated/70 border border-surface-border flex items-center justify-between text-xs font-mono">
             <div className="flex items-center gap-2 text-cinematic-muted">
               <Layers className="w-4 h-4 text-gold-primary" />
-              <span>Modeling Stack:</span>
+              <span>Models:</span>
             </div>
-            <span className="text-gold-bright">Linear • Ridge • Lasso • Random Forest</span>
+            <span className="text-gold-bright">Linear Regression • Random Forest</span>
           </div>
         </div>
       </div>

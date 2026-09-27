@@ -21,7 +21,7 @@ export default function Education() {
           Academic Credentials
         </h3>
         <p className="text-sm font-sans text-cinematic-muted font-light">
-          Formal engineering degree in Artificial Intelligence and Data Science.
+          B.Tech in Artificial Intelligence and Data Science, and school education.
         </p>
       </div>
 
@@ -52,6 +52,11 @@ export default function Education() {
           <p className="text-sm font-sans text-cinematic-muted">
             {edu.institution}
           </p>
+          {edu.currentStatus && (
+            <p className="text-xs font-mono text-cinematic-muted">
+              {edu.currentStatus}
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-surface-border text-xs font-mono">
@@ -61,13 +66,27 @@ export default function Education() {
           </div>
           <div className="flex items-center gap-2 text-cinematic-muted">
             <Calendar className="w-4 h-4 text-gold-primary" />
-            <span>Graduation: <strong className="text-cinematic-text">{edu.graduationYear}</strong></span>
+            <span>Expected Graduation: <strong className="text-cinematic-text">{edu.graduationYear}</strong></span>
           </div>
           <div className="flex items-center gap-2 text-cinematic-muted">
             <MapPin className="w-4 h-4 text-gold-primary" />
             <span>Location: <strong className="text-cinematic-text">{edu.location}</strong></span>
           </div>
         </div>
+
+        {edu.school && (
+          <div className="flex flex-col gap-1 pt-4 border-t border-surface-border">
+            <span className="text-[10px] font-mono text-gold-bright uppercase tracking-cinematic">
+              SCHOOL EDUCATION
+            </span>
+            <p className="text-sm font-sans text-cinematic-text">
+              {edu.school.name}
+            </p>
+            <p className="text-xs font-mono text-cinematic-muted">
+              {edu.school.board}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

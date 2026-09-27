@@ -77,9 +77,9 @@ export default function PrepPitchProject() {
           <div className="flex items-center justify-between border-b border-surface-border pb-3">
             <span className="text-xs font-mono text-gold-primary tracking-cinematic uppercase flex items-center gap-2">
               <Award className="w-4 h-4" />
-              Engineering Ledger // Vishak&apos;s Role
+              Public Prototype
             </span>
-            <span className="text-[10px] font-mono text-cinematic-muted">CONFIRMED SCOPE</span>
+            <span className="text-[10px] font-mono text-cinematic-muted">REACT · TYPESCRIPT · ON GITHUB</span>
           </div>
 
           <ul className="flex flex-col gap-3.5">
@@ -90,6 +90,27 @@ export default function PrepPitchProject() {
               </li>
             ))}
           </ul>
+
+          {prepPitchProject.inDevelopment && (
+            <div className="flex flex-col gap-3 pt-5 border-t border-surface-border">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono text-gold-primary tracking-cinematic uppercase">
+                  In Development
+                </span>
+                <span className="text-[10px] font-mono text-cinematic-muted">DJANGO · PYTHON · NOT YET PUBLIC</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {prepPitchProject.inDevelopment.map((item) => (
+                  <span
+                    key={item}
+                    className="px-2.5 py-1 rounded-sm bg-surface-highlight border border-dashed border-surface-border text-xs font-mono text-cinematic-muted"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -98,7 +119,7 @@ export default function PrepPitchProject() {
         <div className="flex items-center justify-between border-b border-surface-border pb-3 text-xs font-mono">
           <span className="text-gold-bright tracking-cinematic uppercase flex items-center gap-2">
             <Terminal className="w-4 h-4 text-gold-primary" />
-            Interview Evaluation Pipeline Flow (8-Step Architecture)
+            How the Prototype Works (8 Steps)
           </span>
           <span className="text-cinematic-muted hidden sm:inline">DESKTOP & MOBILE RESPONSIVE</span>
         </div>

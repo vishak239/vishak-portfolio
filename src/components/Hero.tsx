@@ -36,16 +36,16 @@ export default function Hero() {
       </CinematicVideo>
 
       <div className="relative z-10 min-h-svh flex flex-col justify-between pt-28 pb-16 px-6 md:px-12 max-w-7xl mx-auto">
-        {/* Telemetry Header */}
+        {/* Header Strip */}
         <div style={cue(300)} className="cine-rise flex items-center justify-between border-b border-surface-border pb-4 text-xs font-mono">
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-gold-primary animate-pulse shadow-gold-glow" />
             <span className="text-gold-bright tracking-cinematic uppercase">ACT I // SCENE 01</span>
           </div>
           <div className="hidden sm:flex items-center gap-6 text-cinematic-muted text-[11px] tracking-widest">
-            <span>ARCHIVE // 2025</span>
+            <span>ARCHIVE // 2026</span>
             <span className="text-surface-border">|</span>
-            <span>LATENCY 14ms</span>
+            <span>B.TECH AI &amp; DS</span>
           </div>
         </div>
 
@@ -110,16 +110,16 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80 pointer-events-none" />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/10 pointer-events-none" />
 
-              {/* Editorial Floating Telemetry Badge */}
+              {/* Editorial Floating Badge */}
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between px-3.5 py-2 rounded-sm bg-surface/85 backdrop-blur-md border border-surface-border text-[10px] font-mono">
                 <span className="text-gold-bright tracking-wider uppercase">CHRONICLE : VOL. 25</span>
-                <span className="text-cinematic-muted tracking-widest">35mm ARCHIVE</span>
+                <span className="text-cinematic-muted tracking-widest">VISUAL ARCHIVE</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Telemetry Strip Bar */}
+        {/* Info Strip Bar */}
         <div style={cue(1600)} className="cine-rise grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 rounded-sm bg-surface-panel/60 backdrop-blur-sm border border-surface-border text-xs font-mono">
           <div className="flex flex-col">
             <span className="text-[10px] text-cinematic-dim uppercase tracking-cinematic">Discipline</span>

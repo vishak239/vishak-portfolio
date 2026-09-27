@@ -28,7 +28,7 @@ export default function SkillsEcosystem() {
           Technical Disciplines
         </h3>
         <p className="text-sm font-sans text-cinematic-muted font-light">
-          Structured engineering categories focused on applied AI, computer vision, and backend architecture.
+          The tools and techniques I work with across applied AI, computer vision and backend development.
         </p>
       </div>
 
@@ -68,7 +68,6 @@ export default function SkillsEcosystem() {
 
               <div className="pt-4 mt-4 border-t border-surface-border text-[10px] font-mono text-cinematic-dim flex items-center justify-between">
                 <span>{cat.skills.length} CORE CAPABILITIES</span>
-                <span className="text-gold-bright">VERIFIED</span>
               </div>
             </div>
           );

@@ -6,38 +6,34 @@ export const profileData: ProfileInfo = {
   headline: 'BUILDING INTELLIGENCE. CREATING WHAT\'S NEXT.',
   subheadline: 'An AI Engineer\'s Journey',
   editorialStatement:
-    'Composing neural architectures, predictive pipelines, and automated intelligence with mathematical rigor and software craftsmanship.',
+    'Building practical AI systems with Python, machine learning and computer vision, one working project at a time.',
   aboutStory: [
-    'I am an Artificial Intelligence & Data Science scholar dedicated to transforming mathematical intuition into resilient, self-orchestrating computational systems using Python, Machine Learning, and Computer Vision.',
-    'My philosophy centers on dissecting real-world friction and systematically engineering elegant, scalable software pipelines that create tangible leverage.',
-    'As a person first and engineer second, my drive is fueled by persistent curiosity—building from first principles, writing clean modular code, and pursuing systems that make technology genuinely intelligent and human-centric.'
+    'I am an Artificial Intelligence & Data Science student focused on building practical AI systems and Python-based applications.',
+    'I like starting from a real problem and working toward something that runs, whether that is a regression model or an interview-practice app. I document what works, what is simulated and what is still planned.',
+    'I am most interested in machine learning, computer vision and intelligent applications, including AI for the automotive space.'
   ],
   education: {
     degree: 'Bachelor of Technology',
     major: 'Artificial Intelligence & Data Science',
     institution: 'Loyola Institute of Technology and Science',
+    currentStatus: 'Final Year · 7th Semester',
     cgpa: '8.5 / 10.0',
     graduationYear: '2027',
     location: 'India',
+    school: {
+      name: 'Vidya Jyothi Matriculation Higher Secondary School',
+      board: 'State Board',
+    },
   },
   interests: [
-    'Python',
+    'Artificial Intelligence',
     'Machine Learning',
-    'Deep Learning',
+    'Python Development',
+    'Backend Development',
     'Computer Vision',
-    'OpenCV',
-    'NumPy',
-    'Pandas',
-    'Django',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Git',
-    'GitHub',
-    'NLP fundamentals',
-    'Generative AI',
-    'Automation',
-    'Intelligent applications'
+    'Data Science',
+    'Automotive AI',
+    'Intelligent Applications'
   ],
   contact: {
     email: 'vishak3416@gmail.com',
@@ -50,68 +46,75 @@ export const profileData: ProfileInfo = {
 export const prepPitchProject: Project = {
   id: 'preppitch',
   title: 'PREPPITCH',
-  actLabel: '04 — FEATURED BENCHMARK',
+  actLabel: '04 — FEATURED PROJECT',
   tagline: 'PRACTICE UNTIL YOUR PITCH IS PERFECT.',
   description:
-    'PrepPitch is an AI-powered student mock interview evaluation platform designed to mentor aspiring candidates through authentic interview iterations, providing structured diagnostics across conceptual articulation, tone, and technical precision.',
-  technologies: ['Python', 'Django', 'Machine Learning', 'NLP', 'Database', 'AI'],
+    'PrepPitch is a mock-interview practice web app for students that I own and develop. The public GitHub repository contains a React/TypeScript prototype. It takes a candidate through interview setup, a timed question-by-question interview and a structured feedback report. With a Google Gemini API key, it generates the questions, follow-ups and rubric feedback. Without one, it falls back to a built-in question bank and rule-based scoring. Separately, I am developing a Django/Python backend for PrepPitch, which is not yet in the public repository.',
+  technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Gemini API', 'Web Speech API'],
   isFlagship: true,
   responsibilities: [
-    'Dataset collection: Aggregated realistic student interview question-and-answer corpora across multiple domains.',
-    'Dataset preparation & cleaning: Sanitized text corpora, normalized responses, and eliminated noise.',
-    'Data labelling: Structured and tagged interview question taxonomies by technical competency and difficulty.',
-    'Model training: Trained scoring models on interview rubric benchmarks for response assessment.',
-    'Model evaluation: Evaluated scoring accuracy, consistency, and precision across diverse test cohorts.',
-    'Interview Evaluation Engine: Architected the algorithmic logic to parse candidate responses and compute actionable rubrics.',
-    'AI/ML backend integration: Seamlessly integrated evaluation endpoints into the Django web architecture.'
+    'Four-step interview setup: interview type, difficulty, role and company details, and practice mode.',
+    'Gemini integration for question generation, one adaptive follow-up per answer, and rubric-based feedback.',
+    'Rule-based fallback, so the app still works without an API key.',
+    'Questions read aloud with the browser’s built-in text-to-speech.',
+    'Feedback report with category scores, a STAR checklist and a review of each answer.',
+    'Progress dashboard with charts, plus a searchable bank of 22 practice questions.'
+  ],
+  inDevelopment: [
+    'Django/Python backend',
+    'Interview flow',
+    'Question engine',
+    'Answer evaluation',
+    'Speech-to-text',
+    'Adaptive interviews'
   ],
   flowSteps: [
     {
       number: '01',
       title: 'Student Input',
-      detail: 'Candidate onboarding, domain selection, and baseline calibration.',
+      detail: 'Demo sign-in with name, email and target role, saved in the browser.',
       accent: false,
     },
     {
       number: '02',
       title: 'Select Job Role',
-      detail: 'Industry taxonomy calibration across software, data, and ML domains.',
+      detail: 'Target role, company and an optional job description in the setup wizard.',
       accent: false,
     },
     {
       number: '03',
       title: 'Select Interview Type',
-      detail: 'Technical competency, HR round, or behavioral assessment mode.',
+      detail: 'HR, behavioral, technical, campus or data-analyst, plus difficulty and practice mode.',
       accent: false,
     },
     {
       number: '04',
       title: 'AI Mock Interview',
-      detail: 'Dynamic contextual question generation and real-time prompt orchestration.',
+      detail: 'Gemini generates five questions for the role when a key is set. Otherwise, a built-in question set is used. Questions are read aloud.',
       accent: true,
     },
     {
       number: '05',
       title: 'Answer Questions',
-      detail: 'Multi-format candidate response capture and input stream ingestion.',
+      detail: 'Typed answers with question and answer timers.',
       accent: false,
     },
     {
       number: '06',
       title: 'AI Evaluation',
-      detail: 'Evaluation Engine runs semantic analysis, syntactic checks, and accuracy scoring.',
+      detail: 'Gemini scores the answers against a rubric. Without a key, rule-based scoring is used.',
       accent: true,
     },
     {
       number: '07',
       title: 'Score + Feedback',
-      detail: 'Multi-metric benchmark breakdown with granular areas for improvement.',
+      detail: 'Overall and category scores, strengths, areas to improve and a STAR checklist.',
       accent: true,
     },
     {
       number: '08',
       title: 'Performance History',
-      detail: 'Longitudinal telemetry tracking trajectory, consistency, and interview readiness.',
+      detail: 'Sessions are saved in the browser and charted on the dashboard and progress pages.',
       accent: false,
     },
   ],
@@ -121,48 +124,36 @@ export const drowsinessProject: Project = {
   id: 'drowsiness-detection',
   title: 'DRIVER DROWSINESS DETECTION',
   actLabel: '05 — VISION SYSTEM',
-  tagline: 'REAL-TIME OCULAR TELEMETRY & FATIGUE MITIGATION.',
+  tagline: 'WATCHING FOR CLOSED EYES, FRAME BY FRAME.',
   description:
-    'An edge-optimized computer vision system performing continuous facial landmark localization and ocular telemetry. Calculates Eye Aspect Ratio (EAR) across frame sequences to avert operator fatigue and trigger millisecond acoustic alarms.',
-  technologies: ['Python', 'OpenCV', 'Computer Vision', 'CNN / Deep Learning concepts'],
+    'A webcam-based drowsiness detection project built with OpenCV. It detects drowsiness using the Eye Aspect Ratio (EAR) together with a CNN-based approach.',
+  technologies: ['Python', 'OpenCV', 'Computer Vision', 'CNN'],
   flowSteps: [
     {
       number: '01',
-      title: 'Webcam Feed Ingestion',
-      detail: 'Continuous video stream capture with real-time frame buffering.',
-      tech: 'OpenCV VideoCapture',
+      title: 'Webcam Feed',
+      detail: 'Frames are read from the webcam with OpenCV.',
+      tech: 'OpenCV',
     },
     {
       number: '02',
-      title: 'Face Detection',
-      detail: 'Frontal face localization isolating region of interest (ROI).',
-      tech: 'Haar Cascade / Deep Face Detector',
+      title: 'Eye Aspect Ratio (EAR)',
+      detail: 'EAR = (||p2-p6|| + ||p3-p5||) / (2||p1-p4||), computed from six landmarks around each eye. It drops towards zero as the eye closes.',
+      tech: 'EAR',
+      accent: true,
     },
     {
       number: '03',
-      title: 'Eye Landmark Localization',
-      detail: 'Pinpointing 6 ocular coordinate landmarks per eye (p1 to p6).',
-      tech: 'Facial Landmark Coordinates',
+      title: 'CNN-Based Approach',
+      detail: 'A convolutional neural network is used alongside EAR.',
+      tech: 'CNN',
+      accent: true,
     },
     {
       number: '04',
-      title: 'Eye Aspect Ratio (EAR)',
-      detail: 'Computing Euclidean distance ratios: EAR = (||p2-p6|| + ||p3-p5||) / (2||p1-p4||).',
-      tech: 'Euclidean Geometric Logic',
-      accent: true,
-    },
-    {
-      number: '05',
       title: 'Drowsiness Detection',
-      detail: 'Tracking consecutive frames below critical threshold (EAR < 0.22 for N frames).',
-      tech: 'Temporal Threshold Filter',
-      accent: true,
-    },
-    {
-      number: '06',
-      title: 'Acoustic / Visual Alert',
-      detail: 'Immediate audio frequency dispatch and visual telemetry warning.',
-      tech: 'Alarm Engine',
+      detail: 'Drowsiness is detected from the EAR and CNN results.',
+      tech: 'EAR + CNN',
       accent: true,
     },
   ],
@@ -172,42 +163,42 @@ export const housePriceProject: Project = {
   id: 'house-price-prediction',
   title: 'HOUSE PRICE PREDICTION',
   actLabel: '06 — PREDICTIVE ANALYTICS',
-  tagline: 'MULTIDIMENSIONAL REGRESSION & REAL ESTATE VALUATION.',
+  tagline: 'A FIRST REGRESSION BASELINE FOR HOUSE PRICES.',
   description:
-    'A machine learning predictive case study parsing demographic indices, architectural variances, and spatial attributes to generate accurate valuation forecasts.',
-  technologies: ['Python', 'Pandas', 'NumPy', 'scikit-learn', 'Matplotlib', 'Machine Learning'],
+    'A first-phase machine learning notebook that predicts house sale prices. It fills missing values, holds out 20% of the data for testing, trains Linear Regression and Random Forest models, and compares them by mean absolute error, with a plot of actual against predicted prices.',
+  technologies: ['Python', 'pandas', 'scikit-learn', 'Matplotlib', 'Jupyter'],
   flowSteps: [
     {
       number: '01',
-      title: 'Dataset Ingestion',
-      detail: 'Structured real estate transaction records with dimensional attributes.',
+      title: 'Load Data',
+      detail: 'Tabular housing data is loaded from a CSV file with pandas.',
     },
     {
       number: '02',
-      title: 'Preprocessing & Cleaning',
-      detail: 'Null value imputation, outlier isolation, and categorical encoding.',
+      title: 'Missing Values',
+      detail: 'Missing values are filled with each column’s mean.',
     },
     {
       number: '03',
-      title: 'Feature Engineering',
-      detail: 'Square-footage normalization, location clustering, and correlation matrix analysis.',
+      title: 'Features & Target',
+      detail: 'SalePrice is the target. All other columns are features.',
     },
     {
       number: '04',
-      title: 'Regression Modeling',
-      detail: 'Benchmarking linear, regularized, and ensemble regression estimators.',
-      accent: true,
+      title: 'Train / Test Split',
+      detail: '80 / 20 split with a fixed random seed.',
     },
     {
       number: '05',
-      title: 'Price Prediction',
-      detail: 'Real-time property appraisal inference with confidence boundaries.',
+      title: 'Train Two Models',
+      detail: 'Linear Regression and Random Forest Regressor are trained on the same split.',
       accent: true,
     },
     {
       number: '06',
-      title: 'Evaluation Metrics',
-      detail: 'Cross-validation benchmarking with R² Score, RMSE, and Mean Absolute Error.',
+      title: 'Evaluate',
+      detail: 'Mean absolute error on the test set, plus an actual-vs-predicted scatter plot.',
+      accent: true,
     },
   ],
 };
@@ -215,30 +206,21 @@ export const housePriceProject: Project = {
 export const archiveProjects: Project[] = [
   {
     id: 'movie-ticket-booking',
-    title: 'Movie Ticket Booking System',
+    title: 'Movie Ticket Booking',
     actLabel: 'ARCHIVE // 01',
-    tagline: 'CONCURRENT RESERVATION & TRANSACTION INTEGRITY.',
+    tagline: 'CONSOLE SEAT BOOKING & TKINTER SCREENS.',
     description:
-      'Full-stack booking apparatus with concurrent seat reservation logic, zero double-booking tolerances, relational database storage, and transactional consistency.',
-    technologies: ['Python', 'SQL / Database', 'Full Stack Architecture'],
+      'An early Python project: a console script that lists movies, shows prices and books seats against an availability count, plus first Tkinter login and sign-up screens.',
+    technologies: ['Python', 'Tkinter'],
   },
   {
     id: 'food-ordering-platform',
-    title: 'Food Ordering Commerce Platform',
+    title: 'Food Ordering App',
     actLabel: 'ARCHIVE // 02',
-    tagline: 'DYNAMIC CATALOG & ORDER ORCHESTRATION.',
+    tagline: 'MENU, CHECKOUT & LOGIN FLOW IN PYTHON.',
     description:
-      'Dynamic catalog browsing with real-time shopping cart dispatch, address orchestration, responsive checkout, and customer order management flows.',
-    technologies: ['Python', 'REST API', 'UI Architecture', 'HTML / CSS / JS'],
-  },
-  {
-    id: 'rics-camera-project',
-    title: 'RICS Camera Vision Project',
-    actLabel: 'ARCHIVE // 03',
-    tagline: 'OPTICAL SENSOR EDGE INFERENCE & FRAME INDEXING.',
-    description:
-      'Embedded optical pipeline utilizing optical sensors for rapid frame indexing, spatial feature isolation, and edge-level computer vision processing.',
-    technologies: ['Embedded Python', 'Edge Computer Vision', 'Linux'],
+      'A console food-ordering flow written in a Jupyter notebook: menu display, order selection, checkout with payment options, feedback, and simple login and registration.',
+    technologies: ['Python', 'Jupyter'],
   },
 ];
 
@@ -247,49 +229,49 @@ export const journeyStages: JourneyStage[] = [
     stageNumber: 'STAGE 01',
     title: 'Pythonic Foundations',
     description:
-      'Mastered functional logic, modular architecture, object-oriented design, algorithmic complexity, and data structures in Python.',
+      'Learned Python through hands-on exercises: control flow, functions, classes, file handling, Tkinter GUIs and MySQL-backed scripts.',
     tagline: 'THE CORE SYNTAX OF THOUGHT',
   },
   {
     stageNumber: 'STAGE 02',
     title: 'Machine Learning',
     description:
-      'Explored supervised learning heuristics, regression, classification algorithms, feature engineering, and scikit-learn pipelines.',
+      'Built regression workflows with scikit-learn: train/test splits, Linear Regression and Random Forest models, and error metrics. Along the way, practised NumPy, pandas, Matplotlib and Seaborn.',
     tagline: 'DISCOVERING PATTERNS IN DATA',
   },
   {
     stageNumber: 'STAGE 03',
     title: 'Deep Learning',
     description:
-      'Dived into neural network architectures, multi-layer perceptrons, backpropagation, activation dynamics, and loss convergence.',
+      'Studying neural network fundamentals through a deep learning internship, and applying a CNN-based approach in drowsiness detection.',
     tagline: 'NEURAL WEIGHTS & CONVERGENCE',
   },
   {
     stageNumber: 'STAGE 04',
     title: 'Computer Vision',
     description:
-      'Built spatial image processing workflows, OpenCV pipelines, facial landmark detectors, and real-time ocular tracking systems.',
+      'Working with OpenCV on webcam-based drowsiness detection, using the Eye Aspect Ratio together with a CNN-based approach.',
     tagline: 'TEACHING MACHINES TO SEE',
   },
   {
     stageNumber: 'STAGE 05',
     title: 'Natural Language Processing',
     description:
-      'Investigated textual representations, token embeddings, semantic similarity metrics, and evaluation heuristics.',
+      'Exploring how text is represented and compared: tokens, embeddings and similarity measures.',
     tagline: 'DECIPHERING HUMAN LANGUAGE',
   },
   {
     stageNumber: 'STAGE 06',
     title: 'Generative AI & Intelligent Apps',
     description:
-      'Designed end-to-end intelligent systems, automated workflows, Django backend integrations, and modern AI application flows.',
+      'Integrated the Google Gemini API into the PrepPitch prototype for question generation, follow-up questions and rubric-based feedback, with a rule-based fallback. Now developing a Django/Python backend for PrepPitch, not yet public.',
     tagline: 'ORCHESTRATING COGNITIVE SYSTEMS',
   },
   {
     stageNumber: 'STAGE 07 • HORIZON',
     title: 'Production AI Engineering',
     description:
-      'Focused on high-reliability inference serving, robust data validation pipelines, system safety, and real-world impact.',
+      'Next: server-side APIs, reliable data pipelines, and deploying models that real users depend on.',
     tagline: 'ENGINEERING FOR THE FUTURE',
     isHorizon: true,
   },
@@ -298,23 +280,23 @@ export const journeyStages: JourneyStage[] = [
 export const skillCategories: SkillCategory[] = [
   {
     category: 'Programming',
-    skills: ['Python', 'HTML', 'CSS', 'JavaScript'],
+    skills: ['Python', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
   },
   {
     category: 'AI & Machine Learning',
-    skills: ['Machine Learning', 'Deep Learning', 'NLP Fundamentals', 'Generative AI'],
+    skills: ['scikit-learn', 'Regression models', 'Gemini API', 'Deep Learning (learning)'],
   },
   {
     category: 'Computer Vision',
-    skills: ['OpenCV', 'Computer Vision'],
+    skills: ['OpenCV', 'Eye Aspect Ratio (EAR)', 'CNNs'],
   },
   {
     category: 'Data Science',
-    skills: ['NumPy', 'Pandas'],
+    skills: ['NumPy', 'pandas', 'Matplotlib', 'Seaborn', 'Jupyter'],
   },
   {
     category: 'Backend Systems',
-    skills: ['Django'],
+    skills: ['Flask', 'MySQL', 'Django'],
   },
   {
     category: 'Tooling & Ops',
@@ -328,49 +310,32 @@ export const experienceItems: ExperienceItem[] = [
     role: 'Python Developer / Python Developer Intern',
     type: 'Internship',
     badge: 'Independently Secured',
-    highlight:
-      'Awarded through an external competitive job search and direct technical assessment—not a college placement.',
+    highlight: 'Independently secured through my own job search and external application, not through college placement.',
+    period: 'From 7 September 2026',
+    location: 'Marthandam',
     description:
-      'Engineered modular Python software components, developed backend logic, and contributed to software application architecture and testing workflows.',
+      'Python development work across backend development, databases and APIs.',
     responsibilities: [
-      'Independently pursued and secured role via external competitive technical screening.',
-      'Developed and debugged clean, maintainable Python backend components.',
-      'Participated in application workflow logic and software validation.'
+      'Python backend development',
+      'Working with databases and APIs',
+      'Testing and debugging'
     ],
   },
   {
     company: 'IT Desk',
-    role: 'Machine Learning Intern',
+    role: 'Python Training / Machine Learning Intern',
     type: 'Internship',
-    description:
-      'Worked with machine learning datasets, statistical modeling workflows, data preprocessing, and predictive analytics implementations.',
-    responsibilities: [
-      'Preprocessed and structured datasets for ML model experimentation.',
-      'Conducted exploratory data analysis and feature evaluation.',
-      'Evaluated machine learning algorithms for predictive accuracy.'
-    ],
+    description: 'Python course and machine learning internship, focused on practical Python and ML learning.',
   },
   {
     company: 'G-Tech',
     role: 'Deep Learning Intern',
     type: 'Internship',
-    description:
-      'Explored deep learning architectures, neural network concepts, model training procedures, and convolutional transformations.',
-    responsibilities: [
-      'Studied and experimented with multi-layer neural network concepts.',
-      'Assisted in data pipeline preparation for deep learning training sessions.',
-      'Monitored loss convergence and model evaluation metrics.'
-    ],
+    description: 'Internship focused on learning deep learning.',
   },
   {
     company: 'MyInspection',
-    role: 'Internship',
+    role: 'Internship / Student Role',
     type: 'Internship',
-    description:
-      'Contributed to software inspection processes, quality testing methodologies, and procedural system evaluations.',
-    responsibilities: [
-      'Participated in system quality assurance reviews and software inspection checks.',
-      'Documented operational workflows and testing observations.'
-    ],
   },
 ];
