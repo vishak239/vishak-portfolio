@@ -49,12 +49,12 @@ export const prepPitchProject: Project = {
   actLabel: '04 — FEATURED PROJECT',
   tagline: 'PRACTICE UNTIL YOUR PITCH IS PERFECT.',
   description:
-    'PrepPitch is a mock-interview practice web app for students that I own and develop. The public GitHub repository contains a React/TypeScript prototype. It takes a candidate through interview setup, a timed question-by-question interview and a structured feedback report. With a Google Gemini API key, it generates the questions, follow-ups and rubric feedback. Without one, it falls back to a built-in question bank and rule-based scoring. Separately, I am developing a Django/Python backend for PrepPitch, which is not yet in the public repository.',
+    'PrepPitch is a mock-interview practice web app for students that I own and develop. The public GitHub repository contains a React/TypeScript prototype. It takes a candidate through interview setup, a timed question-by-question interview and a structured feedback report. With a Google Gemini API key, it generates the questions, follow-ups and rubric feedback. Without one, it falls back to a built-in question bank and rule-based scoring. Separately, I am developing the main PrepPitch application with Django/Python. It is in development and not yet in the public repository.',
   technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Gemini API', 'Web Speech API'],
   isFlagship: true,
   responsibilities: [
     'Four-step interview setup: interview type, difficulty, role and company details, and practice mode.',
-    'Gemini integration for question generation, one adaptive follow-up per answer, and rubric-based feedback.',
+    'Optional Gemini API integration (needs an API key) for question generation, one follow-up question per answer, and rubric-based feedback.',
     'Rule-based fallback, so the app still works without an API key.',
     'Questions read aloud with the browser’s built-in text-to-speech.',
     'Feedback report with category scores, a STAR checklist and a review of each answer.',
@@ -89,7 +89,7 @@ export const prepPitchProject: Project = {
     },
     {
       number: '04',
-      title: 'AI Mock Interview',
+      title: 'Mock Interview',
       detail: 'Gemini generates five questions for the role when a key is set. Otherwise, a built-in question set is used. Questions are read aloud.',
       accent: true,
     },
@@ -101,7 +101,7 @@ export const prepPitchProject: Project = {
     },
     {
       number: '06',
-      title: 'AI Evaluation',
+      title: 'Evaluation',
       detail: 'Gemini scores the answers against a rubric. Without a key, rule-based scoring is used.',
       accent: true,
     },
@@ -264,7 +264,7 @@ export const journeyStages: JourneyStage[] = [
     stageNumber: 'STAGE 06',
     title: 'Generative AI & Intelligent Apps',
     description:
-      'Integrated the Google Gemini API into the PrepPitch prototype for question generation, follow-up questions and rubric-based feedback, with a rule-based fallback. Now developing a Django/Python backend for PrepPitch, not yet public.',
+      'Integrated the Google Gemini API into the PrepPitch prototype for question generation, follow-up questions and rubric-based feedback, with a rule-based fallback. Now developing the main PrepPitch application with Django/Python, not yet public.',
     tagline: 'ORCHESTRATING COGNITIVE SYSTEMS',
   },
   {
@@ -296,7 +296,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: 'Backend Systems',
-    skills: ['Flask', 'MySQL', 'Django'],
+    skills: ['Flask', 'MySQL', 'Django (in development)'],
   },
   {
     category: 'Tooling & Ops',
