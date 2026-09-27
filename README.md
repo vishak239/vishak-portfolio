@@ -1,6 +1,8 @@
 # Vishak — Portfolio
 
-My personal portfolio site: a single-page, editorial-style introduction to my work in AI, machine learning, and Python.
+My personal portfolio site: a single-page, cinematic introduction to my work in AI, machine learning, and Python, told as an AI engineer’s journey in three acts.
+
+**Live site:** [vishak-portfolio-gray.vercel.app](https://vishak-portfolio-gray.vercel.app) · deployed on Vercel
 
 ## Tech Stack
 
